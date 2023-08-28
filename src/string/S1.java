@@ -10,9 +10,9 @@ public class S1 {
         //When create a string using String str = new String ("Hello") then it will create a separate memory in the heap.
         //Even if the two string is same still it will create a new memory location when we create string using new keyword.
 
-        String s1=new String("Hello");
+        String str1=new String("Hello");
         System.out.println(s);
-        System.out.println(s1);
+        System.out.println(str1);
 
         String str = "Hello World";
         System.out.println("The character at index 6 is "+str.charAt(6));
@@ -34,5 +34,42 @@ public class S1 {
         //Negative integer: If the current string (compareString1) is lexicographically less than the anotherString(compareString2).
         //Zero: If the current string is lexicographically equal to the anotherString.
         //Positive integer: If the current string is lexicographically greater than the anotherString.
+
+        //(difference of character value)
+        //if s1 > s2, it returns positive number
+        //if s1 < s2, it returns negative number
+        //if s1 == s2, it returns 0
+        String s1="hello";
+        String s2="hello";
+        String s3="meklo";
+        String s4="hemlo";
+        String s5="flag";
+        System.out.println(s1);
+        System.out.println(s1.compareTo(s2));//0 because both are equal
+        System.out.println(s1.compareTo(s3));//-5 because "h" is 5 times lower than "m"
+        System.out.println(s1.compareTo(s4));//-1 because "l" is 1 times lower than "m"
+        System.out.println(s1.compareTo(s5));//2 because "h" is 2 times greater than "f"
+
+        //If first string is an empty string, the method returns a negative
+        //If second string is an empty string, the method returns a positive number that is the length of the first string.
+        String s6="hello";
+        String s7="";
+        String s8="me";
+        System.out.println(s6.compareTo(s7)); //5
+        System.out.println(s7.compareTo(s8));//-2
+
+        String ss = "HELLO";
+        String ss1 = "hello";
+        int result = ss.compareTo(ss1); // Case sensitive.
+        int result1 = ss.compareToIgnoreCase(ss1); // To ignore case sensitive.
+        System.out.println(result);
+        System.out.println(result1);
+
+        //To check without case-sensitive.
+        //we can convert the string to lowercase or uppercase.
+        ss = ss.toLowerCase();//the string ss is changed. it is not in place if we do ss.toLowercase() it will not change ss.
+        System.out.println(ss);
+        int result3 = ss.compareTo(ss1);
+        System.out.println(result3);
     }
 }

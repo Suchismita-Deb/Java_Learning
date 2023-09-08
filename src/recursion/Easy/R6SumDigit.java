@@ -1,4 +1,4 @@
-package recursion;
+package recursion.Easy;
 
 public class R6SumDigit {
     //sumDigits(126) → 9

@@ -1,4 +1,4 @@
-package recursion;
+package recursion.Easy;
 
 public class R7CountDigit {
     //Count number of 7 in the number.

@@ -1,4 +1,4 @@
-package recursion;
+package recursion.Easy;
 
 public class R3Factorial {
     public static int fibonacci(int n) {

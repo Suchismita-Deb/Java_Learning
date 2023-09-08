@@ -1,4 +1,4 @@
-package recursion;
+package recursion.Easy;
 
 public class R5Triangle {
     //We have triangle made of blocks.

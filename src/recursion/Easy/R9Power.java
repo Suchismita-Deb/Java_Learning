@@ -1,4 +1,4 @@
-package recursion;
+package recursion.Easy;
 
 public class R9Power {
     //powerN(3, 1) → 3

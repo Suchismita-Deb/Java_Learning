@@ -1,4 +1,4 @@
-package recursion;
+package recursion.Easy;
 
 public class R13ChangePi {
     //changePi("xpix") → "x3.14x"

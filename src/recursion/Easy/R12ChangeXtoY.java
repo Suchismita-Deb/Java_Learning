@@ -1,4 +1,4 @@
-package recursion;
+package recursion.Easy;
 
 public class R12ChangeXtoY {
     //changeXY("codex") → "codey"

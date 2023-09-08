@@ -1,4 +1,4 @@
-package recursion;
+package recursion.Easy;
 
 public class R2BunnyEar {
     //We have a number of bunnies and each bunny has two big floppy ears.

@@ -1,4 +1,4 @@
-package recursion;
+package recursion.Easy;
 
 public class R8CountDigit {
     //Given a non-negative int n, compute recursively (no loops) the count of the occurrences of 8 as a digit.

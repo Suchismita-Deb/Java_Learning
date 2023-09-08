@@ -1,4 +1,4 @@
-package recursion;
+package recursion.Easy;
 
 public class R15Array6 {
     //array6([1, 6, 4], 0) → true

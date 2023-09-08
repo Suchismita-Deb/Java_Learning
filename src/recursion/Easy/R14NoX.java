@@ -1,4 +1,4 @@
-package recursion;
+package recursion.Easy;
 
 public class R14NoX {
     //noX("xaxb") → "ab"

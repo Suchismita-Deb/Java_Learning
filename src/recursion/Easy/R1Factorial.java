@@ -1,4 +1,4 @@
-package recursion;
+package recursion.Easy;
 
 public class R1Factorial {
     public static int factorial(int n) {

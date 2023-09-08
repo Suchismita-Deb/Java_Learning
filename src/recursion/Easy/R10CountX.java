@@ -1,4 +1,4 @@
-package recursion;
+package recursion.Easy;
 
 public class R10CountX {
     //countX("xxhixx") → 4

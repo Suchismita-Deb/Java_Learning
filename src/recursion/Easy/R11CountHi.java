@@ -1,4 +1,4 @@
-package recursion;
+package recursion.Easy;
 
 public class R11CountHi {
     //countHi("xxhixx") → 1

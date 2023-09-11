@@ -20,6 +20,7 @@ public class A4 {
 
         greet1.greet("Jennifer");
         GreetName(greet1,"Jennifer");
+        //Hello Jennifer.
     }
 
     public static void GreetName(GreetingFunction greet,String name){

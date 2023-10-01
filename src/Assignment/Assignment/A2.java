@@ -1,4 +1,4 @@
-package functionalProgramming.FunctionalInterface.Assignment;
+package Assignment.Assignment;
 
 import java.util.*;
 import java.util.stream.Collectors;

@@ -1,4 +1,4 @@
-package functionalProgramming.FunctionalInterface.Assignment;
+package Assignment.Assignment;
 
 public interface A1 {
     //Part 1 - Basic Lambda Expressions:

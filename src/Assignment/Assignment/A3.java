@@ -1,4 +1,4 @@
-package functionalProgramming.FunctionalInterface.Assignment;
+package Assignment.Assignment;
 
 import java.util.Arrays;
 import java.util.*;

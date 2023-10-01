@@ -1,4 +1,4 @@
-package functionalProgramming.FunctionalInterface.Assignment;
+package Assignment.Assignment;
 
 public class A4 {
     //Custom Functional Interface.

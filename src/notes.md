@@ -162,3 +162,8 @@ When a single base or parent class has multiple child classes. Class A has 2 chi
 ### Hybrid Inheritance
 Hybrid inheritance is combination of multiple inheritance and multi-level inheritance.
 ![img_4.png](resource/img_4.png)
+Class D is trying to extend class B and class C. This is not possible.
+
+### Cyclic Inheritance
+When one class extends itself or its subclass, then it is called cyclic.
+![img.png](img.png)

@@ -42,8 +42,10 @@ We achieve the data hiding by making the data members private and we achieve abs
 
 
 ## Encapsulation.
+Grouping up of data members and member functions in a single unit is called Encapsulation.
 
-![Encapsulation](resource/Encapsulation.png)
+![img.png](resource/Encapsulation.png)
+
 Example a class is an encapsulation, class is a container which encapsulate the set of methods, attributes and properties to provide internal functionality to the other class.
 
 Encapsulation hides how the class does it but to allow requesting the class what to do.

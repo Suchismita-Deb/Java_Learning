@@ -40,7 +40,6 @@ Hiding the internal implementation and showing the services. Like we use app and
 
 We achieve the data hiding by making the data members private and we achieve abstraction by using interfaces and abstract classes. 
 
----
 
 [comment]: <> (This is the comment in md file.)
 [comment]: <> (in order to make table in md file.
@@ -48,6 +47,7 @@ We achieve the data hiding by making the data members private and we achieve abs
 | :---:   | :---: | :---: |
 | Seconds | 301   | 283   |
 )
+
 
 ## Encapsulation.
 

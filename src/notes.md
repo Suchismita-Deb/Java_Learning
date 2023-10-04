@@ -49,5 +49,124 @@ We achieve the data hiding by making the data members private and we achieve abs
 | Seconds | 301   | 283   |
 )
 
-![Encapsulation](resource/Encapsulation.png)
+## Encapsulation.
 
+![Encapsulation](resource/Encapsulation.png)
+Example a class is an encapsulation, class is a container which encapsulate the set of methods, attributes and properties to provide internal functionality to the other class.
+
+Encapsulation hides how the class does it but to allow requesting the class what to do.
+
+**Data Hiding + Abstraction = Encapsulation.**
+
+**Tightly Encapsulation** A class where all the data members are private. 
+
+---
+
+## Inheritance Is-A Relationship.
+
+Inheritance Is-A Relationship.
+
+Association Has-A Relationship.
+
+ Composition and Aggregation are part of Has-A Relationship.
+
+**Inheritance**
+
+Inheritance is a mechanism of creating new class deriving the old class.
+New Class extends Old Class.
+(Derived class, Child Class, Subclass) extends (Super class, Parent Class, Base class).
+
+In Inheritance the child class gets all the properties of the parent class. This type of relationship is called IS-A Relationship.
+
+Developer is a employee.  Here employee is the base class and the developer and the manager is the child class. Employee extends Manager.
+
+### There are total 5 types of Inheritance.
+
+****Single Inheritance.****
+
+****Multilevel Inheritance.****
+
+****Multiple Inheritance.****
+
+******Hierarchical Inheritance.******
+
+****Hybrid Inheritance.****
+
+### Single Inheritance
+
+Only one parent and one child.
+```java
+class A{
+    
+}
+class B extends A{
+    
+}
+
+```
+![img_1.png](img_1.png)
+### MultiLevel Inheritance
+```java
+class A{
+    
+}
+class B extends A{
+    
+}
+class C extends B{
+    
+}
+```
+![img_2.png](img_2.png)
+
+### Multiple Inheritance
+
+When the class has more than one parent is called Multiple Inheritance.
+Java does not support this.
+
+If C extends A and B both, then there is a chance of ambiguity problem.
+That is, if there is any method present with the same name inside both the class. So this is ambiguity that which method is to call on runtime if it is invoked. This is also called Diamond Ambiguity Problem.
+
+In interfaces multiple inheritance is possible. Interfaces has only declaration, not the implementation. So if there is a similar method with same name present inside both interfaces A and B, then there is only multiple declaration.
+
+![img_3.png](img_3.png)
+```java
+class A{}
+class AA{}
+class C extends A,AA{}
+//This is not allowed.
+```
+![img.png](img.png)
+Interface
+```java
+interface AA{}
+interface AAA{}
+class B implements AA,AAA{}
+```
+Scenario where we have default method with same name inside two interfaces.
+```java
+interface AA{
+    default void method(){
+        System.out.println("Method of AA");
+    }
+}
+interface AAA{
+    default void method(){
+        System.out.println("Method of AAA");
+    }
+}
+class B implements AA,AAA{
+    // Override or implement the method.
+    public void method(){
+        AA.super.method();
+    }
+}
+```
+
+### Hierarchical Inheritance
+When a single base or parent class has multiple child classes. Class A has 2 children B and C.
+![img_5.png](img_5.png)
+
+### Hybrid Inheritance
+Hybrid inheritance is combination of multiple inheritance and multi-level inheritance.
+![img_4.png](img_4.png)

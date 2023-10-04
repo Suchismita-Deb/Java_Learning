@@ -104,7 +104,7 @@ class B extends A{
 }
 
 ```
-![img_1.png](img_1.png)
+![img_1.png](resource/img_1.png)
 ### MultiLevel Inheritance
 ```java
 class A{
@@ -117,7 +117,7 @@ class C extends B{
     
 }
 ```
-![img_2.png](img_2.png)
+![img_2.png](resource/img_2.png)
 
 ### Multiple Inheritance
 
@@ -129,14 +129,14 @@ That is, if there is any method present with the same name inside both the class
 
 In interfaces multiple inheritance is possible. Interfaces has only declaration, not the implementation. So if there is a similar method with same name present inside both interfaces A and B, then there is only multiple declaration.
 
-![img_3.png](img_3.png)
+![img_3.png](resource/img_3.png)
 ```java
 class A{}
 class AA{}
 class C extends A,AA{}
 //This is not allowed.
 ```
-![img.png](img.png)
+![img.png](resource/img.png)
 Interface
 ```java
 interface AA{}
@@ -165,8 +165,8 @@ class B implements AA,AAA{
 
 ### Hierarchical Inheritance
 When a single base or parent class has multiple child classes. Class A has 2 children B and C.
-![img_5.png](img_5.png)
+![img_5.png](resource/img_5.png)
 
 ### Hybrid Inheritance
 Hybrid inheritance is combination of multiple inheritance and multi-level inheritance.
-![img_4.png](img_4.png)
+![img_4.png](resource/img_4.png)

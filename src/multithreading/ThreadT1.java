@@ -1,16 +1,15 @@
 package multithreading;
 
-class Thread1 extends Thread{
+class ThreadT11 extends Thread{
     public void run(){
         for(int i=0;i<5;i++) {
             System.out.println("Thread 1");
         }
-        try {
-            java.lang.Thread.sleep(500);} catch (Exception e) {}
+        try {java.lang.Thread.sleep(500);} catch (Exception e) {}
     }
 }
 
-class Thread2 extends Thread{
+class ThreadT12 extends Thread{
     public void run(){
         for(int i=0;i<5;i++) {
             System.out.println("Thread 2");
@@ -22,8 +21,8 @@ class Thread2 extends Thread{
 
 public class ThreadT1 {
     public static void main(String[] args) {
-        Thread1 t1 = new Thread1();
-        Thread2 t2 = new Thread2();
+        ThreadT11 t1 = new ThreadT11();
+        ThreadT12 t2 = new ThreadT12();
 //        t1.run();
 //        t2.run();
         // The program will wait and run one by one. First the thread1 and then thread2.

@@ -18,9 +18,10 @@ class ThreadT22 implements Runnable{
 
 public class ThreadT2 {
     public static void main(String[] args) {
-        ThreadT11 t1 = new ThreadT11();
-        Thread t2 = new Thread(new ThreadT12());// Calling the Runnable thread.
+        ThreadT21 t1 = new ThreadT21();
+        Thread t2 = new Thread(new ThreadT22());// Calling the Runnable thread.
         t1.start();
         t2.start();
+        new Thread().run();
     }
 }

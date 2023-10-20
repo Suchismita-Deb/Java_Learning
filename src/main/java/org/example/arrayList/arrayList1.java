@@ -41,8 +41,11 @@ public class arrayList1 {
                 arr.add(list.get(i));
         }
         arr.add(list.get(list.size()-1));
-        // This is important as when the last element id unique and not same with the previous one then we are not addingthe last one.
+
+        // This is important as when the last element id unique and
+        // not same with the previous one then we are not adding the last one.
         // We can directly add the last one as the if condition will only add when the next element is different.
+
         System.out.println(arr);
     }
 

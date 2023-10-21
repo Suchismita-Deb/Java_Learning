@@ -36,6 +36,10 @@ public class S2MapAndFlatMap {
 //        List<List<Integer>> nestedList = list.stream()
 //                .flatMap(x->List.of(2*x).stream())
 //                .collect(Collectors.toList());
+
+//        List<List<Integer>> nestedList = list.stream()
+//                .flatMap(x->x.(2*x).stream())
+//                .collect(Collectors.toList());
     }
 
 }

@@ -9,8 +9,12 @@ public class FP01 {
     }
 
     private static void printAllNumberInList(List<Integer> ll) {
+//        ll.stream()
+//                .forEach(FP01::printNum);// Calling static method. Method reference.
+
+        FP01 p = new FP01();
         ll.stream()
-                .forEach(FP01::printNum);
+                .forEach(p::printNumInstanceMethod);// Calling instance Method. Method Reference.
         // We have t0 define what do we want for the number. This is called Method Reference.
         // We are getting stream of the numbers.
         // For each of the number we will call the current class and the method.
@@ -18,6 +22,9 @@ public class FP01 {
     }
 
     private static void printNum(int num) {
+        System.out.print(num+" ");
+    }
+    private void printNumInstanceMethod(int num) {
         System.out.print(num+" ");
     }
 }

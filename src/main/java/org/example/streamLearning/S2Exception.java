@@ -48,7 +48,8 @@ public class S2Exception {
             System.out.println("Exception is "+e);
         }
     }
-    public static <T>Consumer<T> handleExceptionIfAny(Consumer<T> input){
+
+    public static <String> Consumer<String> handleExceptionIfAny(Consumer<String> input){
         // The method definition is generic.
         // public static Consumer<String> handleExceptionIfAny(Consumer<String> input)
         // For string consumer.

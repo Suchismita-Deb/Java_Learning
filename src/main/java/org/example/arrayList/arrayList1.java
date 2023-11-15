@@ -1,5 +1,6 @@
 package org.example.arrayList;
 import java.util.*;
+import java.util.function.Consumer;
 
 public class arrayList1 {
 
@@ -113,5 +114,14 @@ public class arrayList1 {
         //remove the occurrence of value in the range of min(inclusive) and max(exclusive).
         ArrayList<Integer> arrayList3 = new ArrayList<>(Arrays.asList(2,8,4,4325,565,6,9,8,9,9,0,54,3,2,0,89,98));
         removeInRange(arrayList3,0,11,16);
+        List<Integer> list123 = Arrays.asList(1,4,6,8,9,7,5,3,2);
+
+//Implemenation via anonymous inner class
+        list123.forEach(new Consumer<Integer>() {
+            @Override
+            public void accept(Integer i) {
+                System.out.println(i);
+            }
+        });
     }
 }

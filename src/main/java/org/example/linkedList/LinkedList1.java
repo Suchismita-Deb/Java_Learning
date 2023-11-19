@@ -1,16 +1,16 @@
 package org.example.linkedList;
 
+class ListNode{
+    String data;
+    ListNode next;
+
+    ListNode(String data){
+        this.data =data;
+        this.next =null;
+    }
+}
 public class LinkedList1 {
     // Creating linked list with Node.
-        public static class ListNode{
-            String data;
-            ListNode next;
-
-            ListNode(String data){
-                this.data =data;
-                this.next =null;
-            }
-        }
         public static void main(String[] args) {
             ListNode a=new ListNode("Hello");
             ListNode b=new ListNode("World");

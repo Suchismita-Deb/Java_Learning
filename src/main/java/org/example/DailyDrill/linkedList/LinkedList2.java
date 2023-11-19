@@ -1,4 +1,4 @@
-package org.example.linkedList;
+package org.example.DailyDrill.linkedList;
 
 import java.util.*;
 public class LinkedList2 {

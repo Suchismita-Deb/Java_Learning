@@ -1,4 +1,4 @@
-package org.example.linkedList;
+package org.example.DailyDrill.linkedList;
 
 public class SinglyLinkedList {
 

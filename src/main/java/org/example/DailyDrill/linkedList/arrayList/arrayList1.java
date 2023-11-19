@@ -1,4 +1,4 @@
-package org.example.arrayList;
+package org.example.DailyDrill.linkedList.arrayList;
 import java.util.*;
 import java.util.function.Consumer;
 

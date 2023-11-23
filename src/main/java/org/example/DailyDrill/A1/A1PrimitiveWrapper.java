@@ -1,6 +1,6 @@
 package org.example.DailyDrill.A1;
 
-public class PrimitiveWrapper {
+public class A1PrimitiveWrapper {
     public static void main(String[] args) {
         // Primitive cannot store null.
         int i=10;

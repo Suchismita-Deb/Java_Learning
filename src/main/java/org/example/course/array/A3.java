@@ -5,6 +5,29 @@ import java.util.Arrays;
 public class A3 {
     public static void main(String[] args) {
         moveAllZeroEnd();
+        check3ConsecutiveOdds();
+    }
+
+    private static void check3ConsecutiveOdds() {
+        int nums[] = {1,2,3,2,3,5,6,7,8,9,8,9,89,9};
+        // 3 consecutives odd.
+        for(int i=0;i<nums.length-2;i++){
+            if(nums[i]%2!=0 && nums[i+1]%2!=0 && nums[i+2]%2!=0){
+                System.out.println("true");
+            }
+        }
+        int count=0;
+        for(int i=0;i<nums.length;i++){
+            if(nums[i]%2==0){
+                count=0;
+            }
+            else{
+                count++;
+                if(count==3){
+                    System.out.println("true");
+                }
+            }
+        }
     }
 
     private static void moveAllZeroEnd() {

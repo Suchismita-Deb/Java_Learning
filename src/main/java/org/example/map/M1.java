@@ -22,6 +22,12 @@ public class M1 {
             System.out.println("Key = " + entry.getKey() + ", Value = " + entry.getValue());
 
         putIfAbsentMap();
+        initializeMultipleHashMapOneLine();
+    }
+
+    private static void initializeMultipleHashMapOneLine() {
+        Map<Integer, Integer> left = new HashMap(),
+                right = new HashMap(), count = new HashMap();
     }
 
     private static void putIfAbsentMap() {

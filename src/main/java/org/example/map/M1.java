@@ -20,5 +20,26 @@ public class M1 {
         }
         for (Map.Entry<Character,Integer> entry : mp.entrySet())
             System.out.println("Key = " + entry.getKey() + ", Value = " + entry.getValue());
+
+        putIfAbsentMap();
+    }
+
+    private static void putIfAbsentMap() {
+        int ar[] = {8,1,2,2,4};
+        HashMap<Integer,Integer> mp = new HashMap<>();
+        // Storing index of the first occurrence of the number.
+        for(int i=0;i<ar.length;i++) {
+            if (!mp.containsKey(ar[i])){
+                mp.put(ar[i],i);
+            }
+        }
+        for (Map.Entry<Integer,Integer> entry : mp.entrySet())
+            System.out.println("Key = " + entry.getKey() + ", Value = " + entry.getValue());
+
+        // This can be also done with the method putIfAbsent
+        Map<Integer, Integer> map = new HashMap<>();
+        for (int i = 0; i < ar.length; i++) {
+            map.putIfAbsent(ar[i], i);
+        }
     }
 }

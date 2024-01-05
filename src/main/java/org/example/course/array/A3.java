@@ -4,23 +4,87 @@ import java.util.Arrays;
 
 public class A3 {
     public static void main(String[] args) {
-        moveAllZeroEnd();
-        check3ConsecutiveOdds();
-        productPrevNextEleUsingExtraSpace();
+//        moveAllZeroEnd();
+//        check3ConsecutiveOdds();
+//        productPrevNextEleUsingExtraSpace();
+//        productPrevNextElementWithoutExtraSpace();
+        
+//        int arr[] = {0,1,0,1,1,0,0,1};
+//        int n = 5;
+//        System.out.println(Arrays.toString(callArray(n, arr)));
 
+//        trappingRainWaterProblem();
+
+    }
+
+    private static void trappingRainWaterProblem() {
+        int arr[] = {1,3,0,1,2,0,4,1,2};
+        int prefixLarge[] = new int[arr.length];
+        prefixLarge[0] = 0;
+        int suffixLarge[] = new int[arr.length];
+        suffixLarge[arr.length-1] = 0;
+        int l = arr[0];
+        int l1 = arr[arr.length-1];
+        for(int i=1;i<arr.length;i++){
+            if(arr[i-1]>l)
+                l=arr[i-1];
+            prefixLarge[i] = l;
+        }
+        for(int j=arr.length-2;j>=0;j--){
+            if(arr[j+1]>l1)
+                l1 = arr[j+1];
+            suffixLarge[j] = l1;
+        }
+        int num[] = new int[arr.length];
+        num[0] = 0;
+        num[arr.length-1] = 0;
+        for(int i=1;i<arr.length-1;i++){
+            if(Math.min(prefixLarge[i],suffixLarge[i])-arr[i]>0){
+                num[i] = Math.min(prefixLarge[i],suffixLarge[i])-arr[i];
+            }
+            else
+                num[i] = 0;
+        }
+        System.out.println(Arrays.toString(num));
+        int sum=0;
+        for(int i=0;i<num.length;i++){
+            sum+=num[i];
+        }
+        System.out.println(sum);
+    }
+
+
+    private static int[] callArray(int n, int[] arr) {
+        if(n ==0) return arr;
+        int current = 0;
+        int left = arr[0];
+        arr[0] = 0;
+        for(int i=1;i<7;i++){
+            current = arr[i];
+            if(arr[i+1]==left)
+                arr[i] = 1;
+            else
+                arr[i] = 0;
+            left = current;
+        }
+        arr[7] = 0;
+//        System.out.print(n);
+//        System.out.println(Arrays.toString(arr));
+        return callArray(n-1,arr);
+    }
+
+    private static void productPrevNextElementWithoutExtraSpace() {
         // Product of previous element and next element without using extra space.
         int arr[] = {2,3,4,5,6};
-        int nums[] = new int[arr.length];
-        int j=1;
-//        arr[0] = arr[0]*arr[1];
-        nums[arr.length-1] = arr[arr.length-1]*arr[arr.length-2];
+        int left=arr[0];
+        arr[0] = arr[0]*arr[1];
+        int current = 0;
         for(int i=1;i<arr.length-1;i++){
-
-            if(i==0) arr[0] = arr[0]*arr[1];
-            int temp = arr[i-1];
-            if(i!=0) arr[j++] = temp*arr[i+1];
-
+            current = arr[i];
+            arr[i] = left*arr[i+1];
+            left = current;
         }
+        arr[arr.length-1] = arr[arr.length-1]*left;
         System.out.println(Arrays.toString(arr));
     }
 

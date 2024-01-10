@@ -7,6 +7,41 @@ import java.util.Map;
 public class MergeSortedArray {
     public static void main(String[] args) {
 //        mergeSortedArrayExtraSpace();
+        mergeSortedArrayWithoutExtraSpace();
+//        countElementLessValue();
+//        countDigitUsingForLoop();
+    }
+
+    private static void mergeSortedArrayWithoutExtraSpace() {
+        int num1[] = {1,2,3,0,0,0};
+        int num2[] = {2,5,6};
+        int m=3;
+        int n=3;
+        int p = m-1;
+        int q = n-1;
+        for(int i=m+n-1;i>=0;i--){
+            if(q<0) break;
+            if(num2[q]>num1[p]){
+                num1[i] = num2[q--];
+            }
+            else{
+                num1[i] = num1[p--];
+            }
+        }
+        System.out.println(Arrays.toString(num1));
+    }
+
+    private static void countDigitUsingForLoop() {
+        int n = 12345;
+        int count = 0;
+        for(int i=n;i>0;i=i/10){
+            System.out.println(i);
+            count++;
+        }
+        System.out.println(count);
+    }
+
+    private static void countElementLessValue() {
         int arr[] = {8,1,2,2,4};
         HashMap<Integer,Integer> mp = new HashMap<>();
         int ar[] = {8,1,2,2,4};

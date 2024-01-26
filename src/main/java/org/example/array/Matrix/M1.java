@@ -2,13 +2,13 @@ package org.example.array.Matrix;
 
 public class M1 {
     public static void main(String[] args) {
+        printMatrix();
+        rowColumnOfMatrix0();
+    }
+
+    private static void rowColumnOfMatrix0() {
+        // The row and column of the position with value 0 is changed to -1.
         int[][] matrix = {{1,2,3},{4,0,6},{7,8,9}};
-        for(int i=0;i<matrix.length;i++){
-            for(int j=0;j<matrix[i].length;j++){
-                System.out.print(matrix[i][j]);
-            }
-            System.out.println();
-        }
         int[][] m1 = matrix;// Copying the matrix.
         System.out.println();
         for(int i=0;i<matrix.length;i++){
@@ -28,6 +28,16 @@ public class M1 {
         for(int i=0;i<m1.length;i++){
             for(int j=0;j<m1[i].length;j++){
                 System.out.print(m1[i][j]);
+            }
+            System.out.println();
+        }
+    }
+
+    private static void printMatrix() {
+        int[][] matrix = {{1,2,3},{4,0,6},{7,8,9}};
+        for(int i=0;i<matrix.length;i++){
+            for(int j=0;j<matrix[i].length;j++){
+                System.out.print(matrix[i][j]);
             }
             System.out.println();
         }

@@ -1,9 +1,14 @@
 package org.example.practice;
-import java.sql.Array;
-import java.util.*;
+
+import java.util.Arrays;
 
 public class A1 {
     public static void main(String[] args) {
+//        countArray();
+        System.out.println(0^12^13^12);
+    }
+
+    private static void countArray() {
         int nums[] = {1,2,2,2,2};
         Arrays.sort(nums);
         int count=0;

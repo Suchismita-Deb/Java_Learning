@@ -62,14 +62,41 @@ public class S1 {
         String ss1 = "hello";
         int result = ss.compareTo(ss1); // Case sensitive.
         int result1 = ss.compareToIgnoreCase(ss1); // To ignore case sensitive.
-        System.out.println(result);
-        System.out.println(result1);
+        System.out.println(result+" "+result1);
 
         //To check without case-sensitive.
         //we can convert the string to lowercase or uppercase.
         ss = ss.toLowerCase();//the string ss is changed. it is not in place if we do ss.toLowercase() it will not change ss.
-        System.out.println(ss);
         int result3 = ss.compareTo(ss1);
-        System.out.println(result3);
+        System.out.print(ss+" "+result3);
+
+        String str11 = "ab-cd*efg";//gf-ed-cba
+        System.out.println();
+        reverseString(str11);
+    }
+
+    private static void reverseString(String s) {
+        StringBuilder str = new StringBuilder();
+
+        StringBuilder newStr = new StringBuilder();
+        for(int i=0;i<s.length();i++){
+            if(Character.isAlphabetic(s.charAt(i))){
+                newStr.append(s.charAt(i));
+            }
+        }
+        int j=newStr.length()-1;
+        System.out.println(newStr);
+        for(int i=0;i<s.length();i++){
+            System.out.print(s.charAt(i));
+            if(!Character.isAlphabetic(s.charAt(i))){
+                str.append(s.charAt(i));
+            }
+            else {
+                str.append(newStr.charAt(j));
+                j--;
+            }
+        }
+        System.out.println();
+        System.out.println(str);
     }
 }

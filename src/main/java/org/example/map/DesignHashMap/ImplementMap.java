@@ -10,7 +10,7 @@ public class ImplementMap {
         nameMap.put(5,"React");
         nameMap.put(1,"DSA");
 
-        System.out.println(nameMap.get(3));
-        System.out.println(nameMap.get(1));
+//        System.out.println(nameMap.get(3));
+//        System.out.println(nameMap.get(1));
     }
 }

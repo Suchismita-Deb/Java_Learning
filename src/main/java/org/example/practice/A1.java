@@ -5,7 +5,9 @@ import java.util.Arrays;
 public class A1 {
     public static void main(String[] args) {
 //        countArray();
-        System.out.println(0^12^13^12);
+//        System.out.println(0^12^13^12);
+
+        System.out.println(2^3);
     }
 
     private static void countArray() {

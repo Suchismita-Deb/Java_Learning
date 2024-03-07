@@ -8,14 +8,21 @@ public class MergeSortedArray {
     public static void main(String[] args) {
 //        mergeSortedArrayExtraSpace();
         mergeSortedArrayWithoutExtraSpace();
+        mergeSortedArray();
 //        countElementLessValue();
 //        countDigitUsingForLoop();
     }
 
+    private static void mergeSortedArray() {
+        int arr[] = {1,2,5,6};
+        int arr1[] = {3,7,8};
+//        for(int i=0;)
+    }
+
     private static void mergeSortedArrayWithoutExtraSpace() {
-        int num1[] = {1,2,3,0,0,0};
+        int num1[] = {1,2,3,8,9,0,0,0};
         int num2[] = {2,5,6};
-        int m=3;
+        int m=5;
         int n=3;
         int p = m-1;
         int q = n-1;

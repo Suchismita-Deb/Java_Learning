@@ -1,3 +1,6 @@
+## char ascii value has 127. But extended ascii has 256 with includes other special character.
+
+
 # OOPS in Java.
 ## 4 OOPS principal in java.
 

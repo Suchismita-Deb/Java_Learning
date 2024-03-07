@@ -24,7 +24,6 @@ public class SinglyLinkedList {
         head = newNode;
     }
 
-
     public void addLast(int data){
         ListNode newNode = new ListNode(data);
         ListNode currNode = head;

@@ -1,0 +1,16 @@
+
+27
+Chicago,Illinois
+Interstates I-94;I-90;I-88;I-57;I-55
+
+27
+Chicago,Illinois
+Interstates I-94;I-90;I-88;I-57;I-55
+
+10
+San Jose,California
+Interstates I-5;I-80
+
+4
+Raleigh,North Carolina
+Interstates I-40;I-85;I-95

@@ -18,8 +18,7 @@ public class M2 {
             System.out.println(entry.getKey()+" "+entry.getValue());
         }
 
-        System.out.println("LinkedHahMap maintain insertion order.");
-
+        System.out.println("LinkedHashMap maintain insertion order.");
         LinkedHashMap<Integer,Integer> lmap = new LinkedHashMap<>();
         for(int i=0;i<arr.length;i++){
             lmap.put(arr[i],lmap.getOrDefault(arr[i],0)+1);
@@ -27,6 +26,7 @@ public class M2 {
         for(Map.Entry<Integer,Integer> entry: lmap.entrySet()){
             System.out.println(entry.getKey()+" "+entry.getValue());
         }
+
         System.out.println("TreeMap sorted order of key.");
         TreeMap<Integer,Integer> tmap = new TreeMap<>();
         for(int i=0;i<arr.length;i++){
